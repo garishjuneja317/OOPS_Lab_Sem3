@@ -26,7 +26,9 @@ void decompress(const char* input, char* output) {
             *outPtr = currentChar;
             outPtr++;
         }
+        inPtr = inPtr + 2;
     }
+    *outPtr = '\0';
 }
 int main() {
     char input[100];
