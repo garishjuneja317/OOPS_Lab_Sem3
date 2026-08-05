@@ -78,7 +78,6 @@ void executeProgram(const vector<string>& program) {
                 pc++;
             }
         } else if (command == "ENDWHILE") {
-            // Reached the end of the loop body, scan backward to the matching WHILE
             int depth = 1;
             while (depth > 0 && pc >= 0) {
                 pc--;
